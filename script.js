@@ -1,5 +1,5 @@
 $(function () {
-   if($('.button1').length > 0) {
-       alert("funcionando")
-   }
+
+    $('a').attr('href', 'http://google.com.br');
+
 });
