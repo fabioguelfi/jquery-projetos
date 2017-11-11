@@ -1,5 +1,11 @@
 $(function () {
 
-    $('a').attr('href', 'http://google.com.br');
+    $('button').click(function(){
+        if($(this).hasClass('fundovermelho')){
+            $(this).removeClass('fundovermelho')
+        } else {
+            $(this).addClass('fundovermelho')
+        }
+    })
 
 });
