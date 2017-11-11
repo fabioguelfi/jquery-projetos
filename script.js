@@ -1,10 +1,9 @@
 $(function () {
 
-    $('button').mouseover(function(){
+    $('button').hover(function(){
         $(this).addClass('fundovermelho')
-    })
-
-    $('button').mouseout(function(){
+    },function(){
         $(this).removeClass('fundovermelho')
     })
+
 });
