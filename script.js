@@ -1,9 +1,10 @@
 $(function () {
 
-    $('button').click(function(){
-       
-        $(this).toggleClass('fundovermelho');
-
+    $('button').mouseover(function(){
+        $(this).addClass('fundovermelho')
     })
 
+    $('button').mouseout(function(){
+        $(this).removeClass('fundovermelho')
+    })
 });
