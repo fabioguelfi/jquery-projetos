@@ -1,9 +1,11 @@
 $(function () {
 
-    $('button').hover(function(){
-        $(this).addClass('fundovermelho')
-    },function(){
-        $(this).removeClass('fundovermelho')
-    })
+    $('button').bind('click', function(){
+        var altura = $('#altura').val();
+        var peso = $('#peso').val();
 
+        imc = peso / (altura*altura);
+        $('#resultado').html(imc);
+    })
+   
 });
